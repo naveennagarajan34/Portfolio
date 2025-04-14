@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -50,7 +51,7 @@
         <div id="lead-content">
             <h1>Naveen N</h1>
             <h2>QA - Software Engineering</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
+            <a href="resume.pdf" class="btn-rounded-white" target="_blank">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -73,8 +74,13 @@
                 </div>
                 <div class="col-md-8">
                     <p style="text-align:justify;">
-                        As a Test Engineer in Software Testing for 4 years, I have gained extensive experience in various testing methodologies. I possess a strong knowledge of creating scripts in Selenium Web Driver with Java and have hands-on experience in Cucumber BDD.
-Throughout my career, I have successfully performed Functionality testing, Accessibility Testing, Localization Testing, and Sanity testing. Additionally, I am well-versed in using Maven build tool and managing java automation projects. My expertise extends to writing automation scripts using Java and Selenium for different browsers. 
+                        As a Test Engineer in Software Testing for 4 years, I have gained extensive experience in
+                        various testing methodologies. I possess a strong knowledge of creating scripts in Selenium Web
+                        Driver with Java and have hands-on experience in Cucumber BDD.
+                        Throughout my career, I have successfully performed Functionality testing, Accessibility
+                        Testing, Localization Testing, and Sanity testing. Additionally, I am well-versed in using Maven
+                        build tool and managing java automation projects. My expertise extends to writing automation
+                        scripts using Java and Selenium for different browsers.
                     </p>
                 </div>
             </div>
@@ -113,7 +119,7 @@ Throughout my career, I have successfully performed Functionality testing, Acces
         <!-- End .education-block -->
 
         <div class="education-block">
-            <h3>Premier Vidyaa Vikash Matriculation Higher Secondary School</h3>
+            <h3 class="w-auto">Premier Vidyaa Vikash Matriculation Higher Secondary School</h3>
             <span class="education-date">June 2015 - April 2017</span>
             <h4>Higher Secondary</h4>
         </div>
@@ -125,76 +131,7 @@ Throughout my career, I have successfully performed Functionality testing, Acces
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="project shadow-large">
-                    <div class="row">
-                        <!-- Project Image -->
-                        <div class="col-md-6 project-image">
-                            <img src="images/project.jpg" class="img-responsive" alt="ScriptureForge Project Image" />
-                        </div>
-                        <!-- Project Info -->
-                        <div class="col-md-6 project-info">
-                            <h3>ScriptureForge Translation</h3>
-                            <p style="text-align: justify;">
-                                <strong>Title:</strong> ScriptureForge – Collaborative Bible Translation Platform
-                            </p>
-                            <p style="text-align: justify;">
-                                <strong>Description:</strong> ScriptureForge is a web-based application that enables collaborative translation and editing of biblical texts. The platform supports linguists, translators, and contributors working together in real time.
-                            </p>
-                            <p style="text-align: justify;">
-                                <strong>My Role:</strong> As a Functionality Tester at EC Group, I contributed to the quality assurance of the ScriptureForge project by:
-                            </p>
-                            <ul style="text-align: left;">
-                                <li>Writing and executing manual test cases based on user stories and feature specs</li>
-                                <li>Performing regression testing to ensure stability after code changes</li>
-                                <li>Developing UI automation scripts using Selenium, Cucumber, Java, and TestNG</li>
-                                <li>Participating in Kanban-based agile processes and attending daily stand-ups</li>
-                                <li>Reporting bugs clearly and ensuring timely resolution with the development team</li>
-                            </ul>
-                            <p style="text-align: justify;">
-                                <strong>Tools & Tech Stack:</strong><br>
-                                Selenium, Cucumber, Java, TestNG, Jira, TestRail, GitHub, BrowserStack, WebSockets, MongoDB
-                            </p>
-                            <p style="text-align: justify;">
-                                <strong>Outcome:</strong> Delivered a stable and user-friendly platform for a global user base. Reduced manual QA effort through automation and improved bug resolution times.
-                            </p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <div class="project shadow-large">
-                    <div class="row">
-                        <div class="col-md-6 project-image">
-                            <img src="images/project.jpg" class="img-responsive" alt="Meta Messenger and Instagram Project" />
-                        </div>
-                        <div class="col-md-6 project-info">
-                            <h3>Meta – Messenger & Instagram Integration</h3>
-                            <p style="text-align: justify;">
-                                <strong>Description:</strong> This project focused on testing cross-functional features between Meta Messenger and Instagram, particularly for messaging, notifications, and user interaction flows across mobile (iOS & Android) and web platforms. It included features like cross-app messaging, end-to-end encryption, reels, and story integrations.
-                            </p>
-                            <p style="text-align: justify;">
-                                <strong>My Role:</strong> As a QA Engineer, I was involved in:
-                            </p>
-                            <ul style="text-align: left;">
-                                <li>Testing cross-platform messaging between Messenger and Instagram</li>
-                                <li>Executing test cases for Reels, Stories, Voice/Video Calls, and Notifications</li>
-                                <li>Performing functional, UI, and regression testing across mobile and web</li>
-                                <li>Verifying feature parity and sync between Messenger and Instagram DMs</li>
-                                <li>Logging and tracking bugs in Jira and collaborating with developers</li>
-                                <li>Validating backend APIs using Postman and ensuring proper encryption flow</li>
-                            </ul>
-                            <p style="text-align: justify;">
-                                <strong>Tools & Technologies:</strong> Jira, Postman, BrowserStack, Charles Proxy, Android Studio, Xcode, TestRail
-                            </p>
-                            <p style="text-align: justify;">
-                                <strong>Outcome:</strong> Helped launch a stable cross-app messaging experience for billions of users by ensuring seamless integration and bug-free performance across major Meta platforms.
-                            </p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                
+                <!-- Project cards will be dynamically rendered here -->
             </div>
         </div>
     </div>
@@ -248,13 +185,16 @@ Throughout my career, I have successfully performed Functionality testing, Acces
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/naveennagarajan34" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/naveennagarajan34" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/connect2naveennagarajan/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/connect2naveennagarajan/" target="_blank"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="mailto:naveennagarajan34@gmail.com" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="mailto:naveennagarajan34@gmail.com" target="_blank"><i class="fa fa-envelope"
+                                    aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -265,6 +205,125 @@ Throughout my career, I have successfully performed Functionality testing, Acces
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // JSON structure for project data
+        const projects = [
+            {
+                title: "ScriptureForge Translation",
+                description: "ScriptureForge is a web-based application that enables collaborative translation and editing of biblical texts.",
+                role: [
+                    "Writing and executing manual test cases based on user stories and feature specs",
+                    "Performing regression testing to ensure stability after code changes",
+                    "Developing UI automation scripts using Selenium, Cucumber, Java, and TestNG",
+                    "Participating in Kanban-based agile processes and attending daily stand-ups",
+                    "Reporting bugs clearly and ensuring timely resolution with the development team"
+                ],
+                tools: "Selenium, Cucumber, Java, TestNG, Jira, TestRail, GitHub, BrowserStack, WebSockets, MongoDB",
+                outcome: "Delivered a stable and user-friendly platform for a global user base. Reduced manual QA effort through automation and improved bug resolution times.",
+                image: "images/project.jpg",
+                alt: "ScriptureForge Project Image"
+            },
+            {
+                title: "Meta – Messenger & Instagram Integration",
+                description: "This project focused on testing cross-functional features between Meta Messenger and Instagram, particularly for messaging, notifications, and user interaction flows across mobile and web platforms.",
+                role: [
+                    "Testing cross-platform messaging between Messenger and Instagram",
+                    "Executing test cases for Reels, Stories, Voice/Video Calls, and Notifications",
+                    "Performing functional, UI, and regression testing across mobile and web",
+                    "Verifying feature parity and sync between Messenger and Instagram DMs",
+                    "Logging and tracking bugs in Jira and collaborating with developers",
+                    "Validating backend APIs using Postman and ensuring proper encryption flow"
+                ],
+                tools: "Jira, Postman, BrowserStack, Charles Proxy, Android Studio, Xcode, TestRail",
+                outcome: "Helped launch a stable cross-app messaging experience for billions of users by ensuring seamless integration and bug-free performance across major Meta platforms.",
+                image: "images/project.jpg",
+                alt: "Meta Messenger and Instagram Project"
+            }
+        ];
+
+        // Function to render project cards
+        function renderProjects() {
+            const projectContainer = document.querySelector('#projects .container .row');
+            projectContainer.innerHTML = ''; // Clear existing content
+
+            projects.forEach((project, index) => {
+                const projectCard = document.createElement('div');
+                projectCard.className = 'project shadow-large';
+                projectCard.innerHTML = `
+                    <div class="row">
+                        <!-- Project Image -->
+                        <div class="col-md-4 project-image">
+                            <img src="${project.image}" class="img-responsive" alt="${project.alt}" />
+                        </div>
+                        <!-- Project Info -->
+                        <div class="col-md-8 project-info">
+                            <h3>${project.title}</h3>
+                            <p style="text-align: left; word-break: auto-phrase;"><strong>Description:</strong> ${project.description}</p>
+                            <div style="padding-inline: 1rem;">
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#projectModal" data-index="${index}">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                projectContainer.appendChild(projectCard);
+            });
+        }
+
+        // Function to populate modal with project details
+        function populateModal(index) {
+            const project = projects[index];
+            document.querySelector('#projectModalLabel').textContent = project.title;
+
+            // Populate "My Role" as an unordered list
+            const roleList = document.querySelector('#projectRole');
+            roleList.innerHTML = '';
+            project.role.forEach(role => {
+                const listItem = document.createElement('li');
+                listItem.textContent = role;
+                roleList.appendChild(listItem);
+            });
+
+            document.querySelector('#projectTools').textContent = project.tools;
+            document.querySelector('#projectOutcome').textContent = project.outcome;
+        }
+
+        // Event listener for modal
+        $(document).on('click', '[data-target="#projectModal"]', function () {
+            const index = $(this).data('index');
+            populateModal(index);
+        });
+
+        // Render projects on page load
+        document.addEventListener('DOMContentLoaded', renderProjects);
+    </script>
+
+    <!-- Modal for project details -->
+    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p style="text-align: justify;"><strong>My Role:</strong></p>
+                    <ul id="projectRole" style="text-align: left;"></ul>
+                    <p style="text-align: justify;"><strong>Tools & Tech Stack:</strong> <span id="projectTools"></span>
+                    </p>
+                    <p style="text-align: justify;"><strong>Outcome:</strong> <span id="projectOutcome"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
