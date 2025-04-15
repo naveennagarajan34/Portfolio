@@ -228,9 +228,9 @@
                 ></a>
               </li>
               <li>
-                <a href="mailto:naveennagarajan34@gmail.com" target="_blank"
-                  ><i class="fa fa-envelope" aria-hidden="true"></i
-                ></a>
+                <a href="mailto:naveennagarajan34@gmail.com">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -334,15 +334,32 @@
                     <div class="row">
                         <!-- Project Image -->
                         <div class="col-md-4 project-image">
-                            <img src="${project.image}" class="img-responsive" alt="${project.alt}" />
+                            <img src="${
+                              project.image
+                            }" class="img-responsive" alt="${project.alt}" />
                         </div>
                         <!-- Project Info -->
                         <div class="col-md-8 project-info">
-                            <h3>${project.title}</h3>
-                            <p style="text-align: left; word-break: auto-phrase;"><strong>Description:</strong> ${project.description}</p>
+                            <h3 style="padding-inline: 1rem;">${
+                              project.title
+                            }</h3>
+                            <div class="d-flex flex-column" style="gap: 0.8rem;">
+                                <span style="text-align: left; word-break: auto-phrase; padding-inline: 1rem;"><strong>Client:</strong> ${
+                                  project.client || "N/A"
+                                }</span>
+                                <span style="text-align: left; word-break: auto-phrase; padding-inline: 1rem;"><strong>Domain:</strong> ${
+                                  project.domain || "N/A"
+                                }</span>
+                                <span style="text-align: left; word-break: auto-phrase; padding-inline: 1rem;"><strong>Project Type:</strong> ${
+                                  project.project_type || "N/A"
+                                }</span>
+                                <span style="text-align: left; word-break: auto-phrase; padding-inline: 1rem;"><strong>Role:</strong> ${
+                                  project.role || "N/A"
+                                }</span>
                             <div style="padding-inline: 1rem;">
                                 <button class="btn btn-primary" data-toggle="modal" data-target="#projectModal" data-index="${index}">More Info</button>
                             </div>
+                        </div>
                         </div>
                     </div>
                 `;
@@ -367,6 +384,8 @@
 
         document.querySelector("#projectTools").textContent = project.tools;
         document.querySelector("#projectOutcome").textContent = project.outcome;
+        document.querySelector("#projectDescription").textContent =
+          project.description;
       }
 
       // Event listener for modal
@@ -402,6 +421,10 @@
             </button>
           </div>
           <div class="modal-body">
+            <p style="text-align: left; word-break: auto-phrase">
+              <strong>Description:</strong>
+              <span id="projectDescription"></span>
+            </p>
             <p style="text-align: justify"><strong>My Role:</strong></p>
             <ul id="projectRole" style="text-align: left"></ul>
             <p style="text-align: justify">
