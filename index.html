@@ -60,7 +60,7 @@
           href="https://drive.google.com/file/d/1f_eNhx8VSXuJ016mtBUhP9HwLWaxSHQe/view?usp=sharing"
           class="btn-rounded-white"
           target="_blank"
-          >Download Resume</a
+          >View Resume</a
         >
       </div>
       <!-- End #lead-content -->
@@ -272,7 +272,11 @@
           alt: "ScriptureForge Project Image",
         },
         {
-          title: "Meta – Messenger & Instagram Integration",
+          title: "Meta – Mobile Application Testing",
+          client: "Meta (Facebook Inc.)",
+          domain: "Social Media / Mobile Applications",
+          project_type: "Remote, Agile Methodology",
+          role: "Functionality Tester (Mobile / Web)",
           description:
             "This project involved manual testing of Meta’s mobile application to ensure a seamless and high-quality user experience across Android and iOS platforms. The app featured functionalities such as messaging, notifications, media sharing, live streaming, and real-time synchronization with cloud services.",
           role: [
@@ -289,30 +293,27 @@
           outcome:
             "Helped launch a stable cross-app messaging experience for billions of users by ensuring seamless integration and bug-free performance across major Meta platforms.",
           image: "images/meta.jfif",
-          alt: "Meta Messenger and Instagram Project",
+          alt: "Meta Messenger and Instagram Project image",
         },
         {
           title: "Smart Base Management System",
+          client: "Hexaware (In-house Project)",
+          domain: "Resource & Infrastructure Management",
+          project_type: "Web Application | Agile (Kanban)",
+          role: "UI Automation Tester",
           description:
             "Smart Base Management is a web-based application designed to streamline and automate the management of infrastructure, assets, and personnel within a smart base or campus environment. The system includes modules for user access control, facility tracking, and live dashboards for operational monitoring.",
           role: [
             "Automated UI test cases using Selenium WebDriver, Java, Cucumber, and TestNG",
-
             "Designed Gherkin scenarios for behavior-driven testing and improved test readability for non-technical stakeholders",
-
             "Integrated automation scripts with TestNG for execution and reporting",
-
             "Maintained modular and reusable page object models for scalability",
-
             "Executed test scripts regularly as part of regression and smoke testing",
-
             "Reported and tracked bugs using Jira and followed up with developers for resolution",
-
             "Collaborated with developers and project managers in Kanban-based workflows for timely test execution",
-
             "Contributed to sprint planning, estimation, and retrospectives",
           ],
-          tools: "Jira, Selenium, Cucumber, BrowserStack, TestRail",
+          tools: "Jira, Selenium, Cucumber, Java, TestRail",
           outcome:
             "Improved operational efficiency and resource management through automated, reliable, and scalable testing of the Smart Base Management system.",
           image: "images/qa.webp",
@@ -353,9 +354,7 @@
                                 <span style="text-align: left; word-break: auto-phrase; padding-inline: 1rem;"><strong>Project Type:</strong> ${
                                   project.project_type || "N/A"
                                 }</span>
-                                <span style="text-align: left; word-break: auto-phrase; padding-inline: 1rem;"><strong>Role:</strong> ${
-                                  project.role || "N/A"
-                                }</span>
+
                             <div style="padding-inline: 1rem;">
                                 <button class="btn btn-primary" data-toggle="modal" data-target="#projectModal" data-index="${index}">More Info</button>
                             </div>
