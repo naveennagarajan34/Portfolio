@@ -180,8 +180,8 @@
       <div id="contact-form">
         <form
           id="contactForm"
-          method="POST"
           action="https://formsubmit.co/naveennagarajan34@gmail.com"
+          method="post"
           onsubmit="return validateEmail()"
         >
           <input
@@ -189,7 +189,11 @@
             name="_subject"
             value="📬 Someone Contacted You from Your Portfolio! 🌐"
           />
-          <input type="hidden" name="_captcha" value="true" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://naveennagarajan34.github.io/Portfolio/"
+          />
           <div class="form-group">
             <input
               type="email"
