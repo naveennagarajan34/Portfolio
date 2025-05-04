@@ -631,6 +631,9 @@ footer {
   max-width: 500px;
   margin: 0 auto;
 }
+#contact-form .form-group {
+  margin-bottom: 10px;
+}
 #contact-form input,
 #contact-form textarea {
   display: block;
@@ -641,24 +644,10 @@ footer {
   margin-bottom: 10px;
   background: rgb(34.6970711297, 131.0778242678, 195.6529288703);
   color: #fff;
-  transition: 0.5s ease all;
+  transition: background 0.3s ease;
 }
-#contact-form input::-webkit-input-placeholder,
-#contact-form textarea::-webkit-input-placeholder {
-  color: #fff;
-}
-#contact-form input:-moz-placeholder,
-#contact-form textarea:-moz-placeholder {
-  color: #fff;
-  opacity: 1;
-}
-#contact-form input::-moz-placeholder,
-#contact-form textarea::-moz-placeholder {
-  color: #fff;
-  opacity: 1;
-}
-#contact-form input:-ms-input-placeholder,
-#contact-form textarea:-ms-input-placeholder {
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
   color: #fff;
 }
 #contact-form input:focus,
@@ -666,24 +655,45 @@ footer {
   outline: none;
   background: rgb(30.6150627615, 115.6569037657, 172.6349372385);
 }
+#contact-form input.is-invalid,
+#contact-form textarea.is-invalid {
+  border: 1px solid #dc3545;
+}
 #contact-form textarea {
   height: 150px;
   resize: none;
 }
-#contact-form button {
+#contact-form .invalid-feedback {
+  color: #dc3545;
+  font-size: 14px;
+  text-align: left;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  display: none;
+}
+#contact-form .invalid-feedback.show {
   display: block;
+}
+#contact-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   width: 100%;
   background: #fff;
   border-radius: 4px;
-  padding: 5px 10px;
+  padding: 10px;
   border: none;
   color: #3498db;
   font-weight: 700;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: 0.5s ease all;
+  transition: all 0.3s ease;
 }
 #contact-form button:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+#contact-form button i.fas.fa-paper-plane {
+  font-size: 14px;
 }
 
 /*
